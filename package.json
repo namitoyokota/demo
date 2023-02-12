@@ -9,8 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "aurelia-animator-css": "^1.0.4",
-    "aurelia-bootstrapper": "^2.4.0",
-    "bulma": "^0.9.4"
+    "aurelia-bootstrapper": "^2.4.0"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",

@@ -2,9 +2,26 @@
   <require from="./flex.css"></require>
 
   <div class="flex-pane">
-    <span class="subtitle">Flex</span>
-    <div class="card">Default</div>
-    <div class="card">flex-direction</div>
-    <div class="card">flex-wrap</div>
+    <div class="example-pane">
+      <span class="text-danger">flex-direction: row (default)</span>
+      <div class="example-container row-container">
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
+
+    <div class="example-pane">
+      <span class="text-danger">flex-direction: column</span>
+      <div class="example-container column-container">
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
   </div>
 </template>
