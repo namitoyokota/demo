@@ -2,9 +2,14 @@
   <require from="./flex.css"></require>
 
   <div class="flex-pane">
-    <div class="example-pane">
-      <span class="text-danger">flex-direction: row (default)</span>
-      <div class="example-container row-container">
+    <h3>Flex Directions</h3>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">flex-direction: row; (default)</span>
+      </div>
+
+      <div class="example-container">
         <div class="box border border-primary background-secondary"></div>
 
         <div class="box border border-primary background-secondary"></div>
@@ -13,13 +18,110 @@
       </div>
     </div>
 
-    <div class="example-pane">
-      <span class="text-danger">flex-direction: column</span>
-      <div class="example-container column-container">
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">flex-direction: column;</span>
+      </div>
+
+      <div class="example-container background-danger column">
         <div class="box border border-primary background-secondary"></div>
 
         <div class="box border border-primary background-secondary"></div>
 
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
+
+    <hr />
+    <h3>Gaps</h3>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">column-gap: 10px;</span>
+      </div>
+
+      <div class="example-container background-danger column-gap">
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">row-gap: 10px;</span>
+      </div>
+
+      <div class="example-container background-danger column row-gap">
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
+
+    <hr />
+    <h3>Justify Content</h3>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">justify-content: center;</span>
+      </div>
+
+      <div
+        class="example-container background-danger column-gap justify-center"
+      >
+        <div
+          class="box small-box border border-primary background-secondary"
+        ></div>
+      </div>
+    </div>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">justify-content: space-between;</span>
+      </div>
+
+      <div class="example-container background-danger column-gap space-between">
+        <div
+          class="box small-box border border-primary background-secondary"
+        ></div>
+
+        <div
+          class="box small-box border border-primary background-secondary"
+        ></div>
+      </div>
+    </div>
+
+    <hr />
+    <h3>Align Items</h3>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">align-items: center;</span>
+        <span>height: 200px;</span>
+      </div>
+
+      <div
+        class="example-container background-danger set-height column-gap align-center"
+      >
+        <div class="box border border-primary background-secondary"></div>
+      </div>
+    </div>
+
+    <div class="example-pane background-warning">
+      <div class="header-pane">
+        <span class="text-danger">align-items: stretch;</span>
+        <span>height: 200px;</span>
+      </div>
+
+      <div
+        class="example-container background-danger set-height column-gap align-stretch"
+      >
+        <div class="box border border-primary background-secondary"></div>
         <div class="box border border-primary background-secondary"></div>
       </div>
     </div>
