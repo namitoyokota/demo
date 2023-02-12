@@ -1,3 +1,29 @@
 <template>
-  <h1>${message}</h1>
+  <require from="./app.css"></require>
+  <require from="./flex/flex"></require>
+  <require from="./grid/grid"></require>
+
+  <div class="page-container">
+    <!-- Header -->
+    <div class="header-pane">
+      <button class="button is-black" click.delegate="select(tabs.flex)">
+        <span>Flex</span>
+      </button>
+
+      <span class="title">CSS Demos</span>
+
+      <button class="button is-black" click.delegate="select(tabs.grid)">
+        <span>Grid</span>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="content-pane">
+      <!-- Flex Demo -->
+      <flex if.bind="selectedTab === tabs.flex"></flex>
+
+      <!-- Grid Demo -->
+      <grid if.bind="selectedTab === tabs.grid"></grid>
+    </div>
+  </div>
 </template>

@@ -1,0 +1,13 @@
+.page-container {
+  display: grid;
+  grid-template-rows: min-content auto;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.header-pane {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
