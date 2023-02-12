@@ -4,7 +4,7 @@ enum Tabs {
 }
 
 export class App {
-  selectedTab = Tabs.grid;
+  selectedTab = Tabs.flex;
 
   tabs: typeof Tabs = Tabs;
 
