@@ -1,0 +1,59 @@
+/* DEMO LAYOUTS */
+.demo-pane {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.example-pane {
+  display: grid;
+  grid-template-rows: min-content auto;
+  row-gap: 10px;
+  padding: 20px 10px;
+  border-radius: 3px;
+}
+
+.header-pane {
+  display: flex;
+  justify-content: space-between;
+}
+
+.set-height {
+  height: 200px;
+}
+
+/* SETTINGS */
+
+.column-gap {
+  column-gap: 10px;
+}
+
+.row-gap {
+  row-gap: 10px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* BOX */
+.box {
+  min-height: 100px;
+  max-height: 100%;
+
+  width: 100%;
+}
+
+.small-box {
+  max-width: 250px;
+}
+
+/* OVERRIDE PAPER CSS */
+h3 {
+  margin: 0;
+}

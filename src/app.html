@@ -10,7 +10,15 @@
         <span>Flex</span>
       </button>
 
-      <h3>${selectedTab}</h3>
+      <h3>
+        <template if.bind="selectedTab === tabs.flex">
+          display: flex;
+        </template>
+
+        <template if.bind="selectedTab === tabs.grid">
+          display: grid;
+        </template>
+      </h3>
 
       <button class="button is-black" click.delegate="select(tabs.grid)">
         <span>Grid</span>
