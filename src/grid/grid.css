@@ -1,5 +1,43 @@
-.grid-pane {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
+.grid-container {
+  display: grid;
+}
+
+.template-columns-100 {
+  grid-template-columns: auto 100px;
+}
+
+.template-columns-fr {
+  grid-template-columns: 1fr 100px;
+}
+
+.template-columns-min {
+  grid-template-columns: 1fr auto;
+}
+
+.template-columns-fr-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.template-columns-fr-3 {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.template-columns-fr-even-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.template-columns-fr-even-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.template-rows-min {
+  grid-template-rows: min-content auto;
+}
+
+.template-rows-even {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.template-rows-auto-min {
+  grid-template-rows: auto min-content;
 }
