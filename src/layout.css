@@ -57,6 +57,10 @@
   max-width: 250px;
 }
 
+.big-box {
+  max-width: 150px;
+}
+
 /* OVERRIDE PAPER CSS */
 h3 {
   margin: 0;
