@@ -1,1 +1,3 @@
-export class Grid {}
+export class Grid {
+  thumbnailMode = true;
+}

@@ -3,6 +3,18 @@
   <require from="../layout.css"></require>
 
   <div class="demo-pane">
+    <div if.bind="thumbnailMode" class="thumbnail-pane-flex">
+      <div
+        class="thumbnail-box-flex border border-primary background-secondary"
+      ></div>
+      <div
+        class="thumbnail-box-flex border border-primary background-success"
+      ></div>
+      <div
+        class="thumbnail-box-flex border border-primary background-danger"
+      ></div>
+    </div>
+
     <h3>Flex Directions</h3>
 
     <div class="example-pane background-warning">

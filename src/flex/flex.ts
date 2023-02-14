@@ -1,1 +1,3 @@
-export class Flex {}
+export class Flex {
+  thumbnailMode = true;
+}
