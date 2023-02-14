@@ -1,3 +1,3 @@
 export class Grid {
-  thumbnailMode = true;
+  thumbnailMode = false;
 }
