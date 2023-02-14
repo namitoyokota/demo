@@ -1,3 +1,3 @@
 export class Flex {
-  thumbnailMode = true;
+  thumbnailMode = false;
 }
