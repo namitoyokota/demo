@@ -1,7 +1,7 @@
 <p align="center">
   <img src="static/brush.png" height="128">
-  <h2 align="center"><a href="https://css.namito.wiki">CSS</a></h2>
-  <p align="center">Demos used for understanding CSS<p>
+  <h2 align="center"><a href="https://css.namito.wiki">Demo</a></h2>
+  <p align="center">Webside for sharing my skills.<p>
 </p>
 
 <br>
