@@ -1,37 +1,30 @@
 <template>
-  <require from="./app.css"></require>
-  <require from="./flex/flex"></require>
-  <require from="./grid/grid"></require>
+    <require from="./app.css"></require>
 
-  <div class="page-container">
-    <!-- Header -->
-    <div class="header-pane">
-      <button class="button is-black" click.delegate="select(tabs.flex)">
-        <span>Flex</span>
-      </button>
-
-      <h3>
-        <template if.bind="selectedTab === tabs.flex">
-          display: flex;
-        </template>
-
-        <template if.bind="selectedTab === tabs.grid">
-          display: grid;
-        </template>
-      </h3>
-
-      <button class="button is-black" click.delegate="select(tabs.grid)">
-        <span>Grid</span>
-      </button>
-    </div>
+    <!-- Navigation Bar -->
+    <nav class="split-nav">
+        <div class="nav-brand">
+            <h4><a href="#">demo</a></h4>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible" type="checkbox" name="collapsible" />
+            <label for="collapsible">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li repeat.for="nav of router.navigation">
+                        <a href.one-time="nav.href">${nav.title}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Content -->
-    <div class="content-pane">
-      <!-- Flex Demo -->
-      <flex if.bind="selectedTab === tabs.flex"></flex>
-
-      <!-- Grid Demo -->
-      <grid if.bind="selectedTab === tabs.grid"></grid>
+    <div class="page-content">
+        <router-view></router-view>
     </div>
-  </div>
 </template>
