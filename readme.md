@@ -17,6 +17,9 @@ The objective of this project is to demo how CSS Layouts work to other developer
 ## Tools
 
 -   Aurelia
+-   RxJS
+-   CSS Flexbox
+-   CSS Grid
 
 ![](https://i.imgur.com/waxVImv.png)
 
